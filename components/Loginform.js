@@ -1,11 +1,15 @@
+import react from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import Heading from '../components/Heading'
 import { FaFacebookF, FaLinkedinIn, FaGoogle, FaRegEnvelope } from 'react-icons/fa';
 import {MdLockOutline} from 'react-icons/md';
+import { render } from 'react-dom';
 
-const Loginform = () => {
-  return (
+class Loginform extends react.Component {
+    render()
+    {
+    return (
     <div className='flex flex-col items-center justify-center min-h-screen py-2 bg-gray-200'>
       <Head>
         <title>Login HOme page</title>
@@ -68,6 +72,7 @@ const Loginform = () => {
       </main>
     </div>
   )
+    }
 }
 
 export default Loginform
