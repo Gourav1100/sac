@@ -114,3 +114,7 @@
     flex-direction: column;
   }
 }
+.global {
+  height: 100vh;
+  background-color: aquamarine;
+}
